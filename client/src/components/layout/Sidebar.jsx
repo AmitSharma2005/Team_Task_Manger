@@ -28,7 +28,7 @@ const Sidebar = () => {
     <aside className="w-64 h-screen glass border-r border-slate-200 dark:border-slate-800 sticky top-0 flex flex-col">
       <div className="p-6">
         <h1 className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">
-          TeamTask
+          Ethara
         </h1>
       </div>
 

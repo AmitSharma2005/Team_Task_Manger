@@ -115,7 +115,7 @@ const Tasks = () => {
                   <div className="flex items-center gap-6 mt-8">
                     <div className="flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase tracking-widest">
                        <Calendar size={14} className="text-primary-500" />
-                       Due: {new Date(task.dueDate).toLocaleDateString()}
+                       Due: {task.dueDate ? new Date(task.dueDate).toLocaleDateString() : 'No due date'}
                     </div>
                     <div className="flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase tracking-widest">
                        <Clock size={14} className="text-primary-500" />

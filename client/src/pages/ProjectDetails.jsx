@@ -161,7 +161,7 @@ const ProjectDetails = () => {
                             <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800/50">
                               <div className="flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase">
                                 <Clock size={12} />
-                                {new Date(task.dueDate).toLocaleDateString()}
+                                {task.dueDate ? new Date(task.dueDate).toLocaleDateString() : 'No due date'}
                               </div>
                               <div className="w-7 h-7 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[10px] font-black" title={task.assignedUser?.name}>
                                 {task.assignedUser?.name?.charAt(0).toUpperCase()}
