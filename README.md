@@ -2,6 +2,31 @@
 
 A full-stack project and task management app with role-based admin/member access, project invitations, team views, assigned tasks, and a Kanban-style task board.
 
+## 🔐 Demo Credentials
+
+### Admin Account
+| Field    | Value               |
+|----------|---------------------|
+| Email    | `admin@ethara.com`  |
+| Password | `password123`       |
+| Role     | **ADMIN**           |
+
+> Admin can manage all members, change roles, create projects, assign tasks, and view all team data.
+
+### Member Account
+| Field    | Value                         |
+|----------|-------------------------------|
+| Email    | `sharmaamit92188@gmail.com`   |
+| Password | `Amit@2005`                   |
+| Role     | **ADMIN** *(registered owner)*|
+
+> This account is the registered owner and has ADMIN privileges. It can be downgraded to MEMBER from the Member Management table in the Admin Dashboard.
+
+### Live App
+🌐 **[https://teamtaskmanger-production-38fe.up.railway.app](https://teamtaskmanger-production-38fe.up.railway.app)**
+
+---
+
 ## Features
 
 - Authentication with JWT and bcrypt.
