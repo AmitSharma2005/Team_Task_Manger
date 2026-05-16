@@ -1,9 +1,12 @@
 {
   "name": "ethara-project",
   "version": "1.0.0",
-  "description": "Ethara Team Task Manager",
+  "description": "Ethara Team Task Manager Monorepo",
   "scripts": {
     "install-all": "cd server && npm install && cd ../client && npm install",
+    "postinstall": "npm run install-all",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
     "dev": "npx concurrently \"cd server && npm run dev\" \"cd client && npm run dev\""
   },
   "dependencies": {
